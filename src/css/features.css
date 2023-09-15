@@ -1,0 +1,155 @@
+.dna{
+    background-color: #f5f5f5;
+}
+.innerdna{
+    margin: auto;
+    max-width: 1300px;
+    display: flex;
+    align-items: center;
+}
+.innerdna .text{
+    padding: 30px;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.innerdna .text .title{
+    font-size: xx-large;
+    font-weight: 600;
+}
+.innerdna .text .sub{
+    font-size: 1.3rem;
+    font-weight: 600;
+}
+.innerdna .text p{
+    line-height: 1.4;
+}
+.innerdna .text button{
+    margin-top: 20px;
+    width: 300px;
+    padding: 16px 20px;
+    border-radius: 30px;
+    font-size: .9rem;
+    font-weight: 600;
+    outline: none;
+    border: 2px solid #0ba0da;
+    color: #0ba0da;
+    background-color: white;
+}
+.innerdna .image{
+    width: 50%;
+}
+.innerdna .image img{
+    width: 100%;
+}
+
+@media(max-width:990px){
+    .innerdna{
+        flex-direction: column-reverse;
+    }
+    .innerdna .text , .image{
+        width: 100%!important;
+    }
+}
+
+.feature{
+    padding-top: 50px;
+}
+.feature .heading{
+    font-size: xx-large;
+    font-weight: 600;
+    text-align: center;
+}
+.feature .items{
+    padding-bottom: 40px;
+    padding-top: 30px;
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+.feature .items .item{
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+.feature .items img{
+    height: 28px;
+}
+.feature .items .fifth{
+    height: 50px;
+}
+
+@media(max-width:990px){
+    .feature .items .item{
+        flex-direction: column;
+    }
+}
+@media(max-width:710px){
+    .feature .items{
+        flex-direction: column;
+    }
+}
+
+
+
+
+
+.box{
+    width: 100%;
+    background-color: #f5f5f5;
+    height: 350px;
+    overflow: hidden;
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+.circle{
+    position: absolute;
+    height: 130%;
+    width: 40%;
+    scale: 2;
+    border-radius: 100%;
+    border: #b4e2f4 30px solid;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.circle .title{
+    text-align: center;
+    font-weight: 600;
+    padding-bottom: 20px;
+}
+.circle button{
+    width: 100px;
+    padding: 5px;
+    font-size: 10px;
+    background-color: #049fda;
+    color: white;
+    outline: none;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+}
+.box2{
+    height: 70px;
+    background-color: #049fda;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    font-size: 35px;
+    color: white;
+}
+
+
+@media(max-width:990px){
+    .circle{
+        width: 60%;
+    }
+}

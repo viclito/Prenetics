@@ -1,0 +1,45 @@
+.picwith{
+    background-color:  #f5f5f5;
+    padding-top: 40px;
+}
+.picwith .one ,.two{
+    display: flex;
+    margin: auto;
+    max-width: 1350px;
+    align-items: center;
+    
+}
+.picwith .one .left ,.two .left {
+    padding: 30px;
+    padding-right: 30px;
+    width: 50%;
+}
+.picwith .one .right ,.two .right{
+    width: 50%;
+}
+.picwith .two{
+    flex-direction: row-reverse;
+}
+.picwith .title{
+    font-size: xx-large;
+    font-weight: 600;
+}
+.picwith .disc{
+    padding-top: 20px;
+    line-height: 1.4;
+}
+@media(max-width:990px){
+    .picwith .one{
+        flex-direction: column-reverse;
+    }
+    .picwith .one .right ,.one .left{
+        width: 100%!important;
+    }
+    .picwith .two{
+        flex-direction: column-reverse;
+    }
+    .picwith .two .right ,.two .left{
+        width: 100%;
+    }
+    
+}
